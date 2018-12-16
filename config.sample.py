@@ -5,7 +5,7 @@ def global_vars():
     sport = 'nba'
     sport_year = '2018'
     gameid = 385  # 385=nba,2018; 380=nfl,2018; 375=nba,2017
-    leagueid = 132161 
+    leagueid = 60103 
     league_code = str(gameid) + '.l.' + str(leagueid)
     season_start_date = '2018-10-15'  # 2018
 

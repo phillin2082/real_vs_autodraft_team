@@ -42,31 +42,3 @@ def update_previous_stats(y, today, days_ago, latest_y_teams, auto_teams):
         y.create_daily_auto_stats_file(date, all_y_teams_date, "real")
         y.create_daily_auto_stats_file(date, auto_teams, "auto")
 
-
-"""
-#%% if today, run every hour, if this month run everyday, if this year, run evry month
-fantasy_weeks = y.load_json('yahoo_fantasy_api/data/' + league_code + '/fantasy_weeks.json')
-
-#date = '2017-10-23'
-#today = dt.datetime.strptime('2018-03-31', '%Y-%m-%d')
-#today = dt.datetime.strptime(date, '%Y-%m-%d')
-
-today = dt.datetime.today()
-date = y.convert_date(today)
-
-latest_y_teams = y.get_list_of_teams_json()
-all_y_teams_date = get_all_y_teams_date(date, latest_y_teams)
-auto_teams = y.load_json('yahoo_fantasy_api/data/' + league_code + '/auto_draft_roster.json')
-
-# run hourly to update stats for today
-#update_todays_stats(today, latest_y_teams, auto_teams)
-
-# run daily
-days_ago = -4
-update_previous_stats(today, days_ago, latest_y_teams, auto_teams)
-"""
-
-# run monthly
-#days_ago = -180
-#update_previous_stats(today, days_ago, latest_y_teams)
-

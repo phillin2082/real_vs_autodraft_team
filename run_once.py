@@ -77,6 +77,6 @@ yahoo_settings = y.get_league_settings()
 y.create_json(yahoo_settings, 'yahoo_fantasy_api/data/' + league_code + '/yahoo_settings.json') #write to file
 
 #TO DO get yahoo xrank using API
-https://developer.yahoo.com/fantasysports/guide/players-collection.html
-uri = 'https://fantasysports.yahooapis.com/fantasy/v2/league/' + str(league_code) + '/players;sort=OR'
-y.get_y_json(uri)['fantasy_content']['league']['players']
+#https://developer.yahoo.com/fantasysports/guide/players-collection.html
+#uri = 'https://fantasysports.yahooapis.com/fantasy/v2/league/' + str(league_code) + '/players;sort=OR'
+#y.get_y_json(uri)['fantasy_content']['league']['players']

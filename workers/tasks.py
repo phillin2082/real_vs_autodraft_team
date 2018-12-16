@@ -235,34 +235,3 @@ def run_django_week_update():
     da.update_urls_file()
     da.update_views_file()
     da.update_update_urls_file()
-
-#%%
-@app.task
-def test(arg):
-    print(arg)
-
-
-@app.task
-def add(a, b):
-    return a + b
-
-
-@app.task
-def mul(a, b):
-    return a * b
-
-
-@app.task
-def xsum(numbers):
-    return sum(numbers)
-
-
-@app.task
-def fetch_url(url):
-    resp = requests.get(url)
-    print(resp.status_code)
-
-
-def func(urls):
-    for url in urls:
-        fetch_url.delay(url)

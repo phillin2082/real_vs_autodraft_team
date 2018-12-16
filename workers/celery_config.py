@@ -17,13 +17,3 @@ app.conf.update(
     timezone='America/Los_Angeles',
     #enable_utc=True,
 )
-
-"""
-app.conf.beat_schedule = {
-    'hello': {
-        'task': 'workers.tasks.add',
-        'schedule': crontab(),  # execute every minute
-        'args': (16, 16)
-    },
-}
-"""
